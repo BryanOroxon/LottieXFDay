@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms" 
+             xmlns:local="clr-namespace:LottieXFDay.ViewModels" 
+             x:Class="LottieXFDay.Views.MainPage"
+             Title="Main Page">
+    <ContentPage.BindingContext>
+        <local:MainPageViewModel />
+    </ContentPage.BindingContext>
+    <StackLayout
+        Grid.Row="0"
+        Orientation="Vertical"
+        HorizontalOptions="FillAndExpand"
+        Margin="5, 0">
+        <StackLayout.Background>
+            <LinearGradientBrush EndPoint="0,1">
+                <GradientStop Color="Violet" Offset="0.1" />
+                <GradientStop Color="#00c6ff" Offset="1.0" />
+            </LinearGradientBrush>
+        </StackLayout.Background>
+        <forms:AnimationView 
+                x:Name="animationView" 
+                Grid.Row="0" 
+                BackgroundColor="#000"
+                Animation="122604-ux-ui-design-process-animation.json"
+                AnimationSource="Stream"
+                AutoPlay="True"
+                RepeatMode="Infinite"
+                VerticalOptions="FillAndExpand" 
+                HorizontalOptions="FillAndExpand" />
+        <Button 
+            CornerRadius="20"
+            BackgroundColor="Purple"
+            HorizontalOptions="FillAndExpand"
+            Text="Aboout the App" 
+            Command="{Binding AboutCommand}"/>
+
+        <Button 
+            CornerRadius="20"
+            BackgroundColor="Orange"
+            HorizontalOptions="FillAndExpand"
+            Text="URL Example" 
+            Command="{Binding UrlCommand}"/>
+        
+        <Button 
+            CornerRadius="20"
+            BackgroundColor="OrangeRed"
+            HorizontalOptions="FillAndExpand"
+            Text="Resource Example" 
+            Command="{Binding ResourceCommand}"/>
+
+    </StackLayout>
+</ContentPage>

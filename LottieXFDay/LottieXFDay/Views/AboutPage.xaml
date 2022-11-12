@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms" 
+             xmlns:vm="clr-namespace:LottieXFDay.ViewModels"
+             x:Class="LottieXFDay.Views.AboutPage"
+             Title="{Binding Title}">
+    <ContentPage.BindingContext>
+        <vm:AboutViewModel />
+    </ContentPage.BindingContext>
+
+    <Grid Visual="Material">
+        <!--magic:GradientView VerticalOptions="FillAndExpand">
+            <magic:CssGradientSource>
+                <![CDATA[
+                    linear-gradient(135deg, rgb(15, 35, 134) 0%, rgb(15, 35, 134) 15%,rgb(19, 67, 156) 15%, rgb(19, 67, 156) 47%,rgb(23, 99, 178) 47%, rgb(23, 99, 178) 76%,rgb(26, 130, 200) 76%, rgb(26, 130, 200) 92%,rgb(30, 162, 222) 92%, rgb(30, 162, 222) 100%)
+                ]]>
+            </magic:CssGradientSource>
+        </magic:GradientView-->
+        <Grid>
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0,1">
+                    <GradientStop Color="#000" Offset="0.1" />
+                    <GradientStop Color="#00c6ff" Offset="1.0" />
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height=".15*" />
+                <RowDefinition Height=".7*" />
+                <RowDefinition Height=".15*" />
+
+            </Grid.RowDefinitions>
+            <forms:AnimationView 
+                x:Name="animationView" 
+                Grid.Row="0" 
+                BackgroundColor="#000"
+                Animation="32057-thank-you.json"
+                AnimationSource="Stream"
+                AutoPlay="True"
+                RepeatMode="Infinite"
+                VerticalOptions="FillAndExpand" 
+                HorizontalOptions="FillAndExpand" />
+            <Frame
+                Grid.Row="1"
+                Margin="15,5,15,5"
+                BackgroundColor="Black"
+                Opacity=".6"
+                BorderColor="OrangeRed"
+                HasShadow="True"
+                CornerRadius="20">
+
+                <StackLayout VerticalOptions="Center">
+                    <Label
+                        Text="LottieXFDay"
+                        FontSize="40"
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        HorizontalOptions="CenterAndExpand" />
+                    <Label
+                        Text="By Luis Bryan Oroxón Ramírez "
+                        TextColor="White"
+                        FontAttributes="Bold" />
+                    <Label TextColor="White" FontSize="40" >
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <FormattedString.Spans>
+                                    <Span Text="&#xf309;" TextColor="White" FontFamily="fontello" FontSize="20" />
+                                    <Span Text=" @BryanOroxon" FontSize="16" TextColor="White" FontAttributes="Bold" />
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Label TextColor="White" FontSize="40" >
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <FormattedString.Spans>
+                                    <Span Text="&#xf318;" TextColor="White" FontFamily="fontello" FontSize="20" />
+                                    <Span Text=" www.linkedin.com/in/bryan-oroxon" FontSize="16" TextColor="White" FontAttributes="Bold" />
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Label
+                        x:Name="LabelName"
+                        Text=""
+                        TextColor="White"
+                        FontAttributes="Bold" />
+                    <Label
+                        x:Name="LabelVersion"
+                        Text=" 0 "
+                        TextColor="White"
+                        FontAttributes="Bold" />
+                    <Label
+                        Text="This App was made for Xamarin Day"
+                        TextColor="White" />
+                    <Button
+                        CornerRadius="20"
+                        BackgroundColor="Orange"
+                        Command="{Binding OpenWebCommand}"
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        Text="To visit Lottie Files, press here"
+                        Clicked="Button_Clicked" />
+                </StackLayout>
+
+            </Frame>
+        </Grid>
+
+    </Grid>
+</ContentPage>
