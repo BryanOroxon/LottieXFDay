@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms" 
              xmlns:local="clr-namespace:LottieXFDay.ViewModels"
-             x:Class="LottieXFDay.Views.UrlPage">
+             x:Class="LottieXFDay.Views.UrlPage"
+             Title="{Binding Title}">
     <ContentPage.BindingContext>
         <local:UrlViewModel />
     </ContentPage.BindingContext>
