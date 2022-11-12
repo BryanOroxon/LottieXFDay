@@ -11,10 +11,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Fonts\fontello.ttf" />
     <None Remove="Resources\111529-rocket.json" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Fonts\fontello.ttf" />
     <EmbeddedResource Include="Resources\111529-rocket.json" />
   </ItemGroup>
 

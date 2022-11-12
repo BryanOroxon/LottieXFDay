@@ -9,7 +9,7 @@ namespace LottieXFDay.ViewModels
     {
         public AboutViewModel()
     {
-        Title = "About";
+        Title = "About Page";
         OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://lottiefiles.com/"));
     }
 

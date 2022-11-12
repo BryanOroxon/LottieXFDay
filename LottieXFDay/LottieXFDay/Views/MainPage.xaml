@@ -4,7 +4,7 @@
              xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms" 
              xmlns:local="clr-namespace:LottieXFDay.ViewModels" 
              x:Class="LottieXFDay.Views.MainPage"
-             Title="Main Page">
+             Title="{Binding Title}">
     <ContentPage.BindingContext>
         <local:MainPageViewModel />
     </ContentPage.BindingContext>

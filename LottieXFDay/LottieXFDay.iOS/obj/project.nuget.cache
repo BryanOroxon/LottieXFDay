@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZplGyWk7BCh/K1PpwRtpIkRiYxsN01fWeXp+/HeQTsSYYEXD4DVUavLJf3NErTaZg4Ps7DBRWO+UJXauCIRvDw==",
+  "success": true,
+  "projectFilePath": "C:\\Repos\\LottieXFDay\\LottieXFDay\\LottieXFDay.iOS\\LottieXFDay.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lanze\\.nuget\\packages\\com.airbnb.ios.lottie\\2.5.13\\com.airbnb.ios.lottie.2.5.13.nupkg.sha512",
+    "C:\\Users\\lanze\\.nuget\\packages\\com.airbnb.xamarin.forms.lottie\\4.1.0\\com.airbnb.xamarin.forms.lottie.4.1.0.nupkg.sha512",
+    "C:\\Users\\lanze\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\lanze\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\lanze\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -8,6 +8,8 @@ namespace LottieXFDay.ViewModels
     {
         public UrlViewModel()
         {
+            Title = "URL Lottie Example";
+
             PlayCommand = new Command<AnimationView>((animationView) =>
             {
                 animationView.PlayAnimation();
