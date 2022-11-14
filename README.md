@@ -4,11 +4,11 @@ App for thel Xamarin Day of "Comunidad Xamarin en Español".
 ## Images Preview
 
 
-##Lottien in iOS 
+## Lottien in iOS 
 
 ![](https://github.com/BryanOroxon/LottieXFDay/blob/main/ScreenShots/LottieiOS.gif?raw=true "LottieiOS") LottieXFDay.iOS 
 
-##Lottien in Android 
+## Lottien in Android 
 
 ![](https://github.com/BryanOroxon/LottieXFDay/blob/main/ScreenShots/LottieAndroidSt.gif?raw=true "LottieAndroid")
 LottieXFDay.Android
