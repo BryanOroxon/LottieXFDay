@@ -1,5 +1,6 @@
-# LottieXFDay (https://github.com/BryanOroxon/LottieXFDay "LottieXFDay")
+# LottieXFDay
 App for thel Xamarin Day of "Comunidad Xamarin en Español".
+
 #[LottieXFDay](https://github.com/BryanOroxon/LottieXFDay "LottieXFDay")
 
 ------------
